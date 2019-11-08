@@ -96,8 +96,15 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        # Use selection sort
+        # loop over list
+        # make a nested loop that starts at next index of current index of outer loop
+        # if the number at index of inner loop is smaller than index at outer loop then swap them
+        for i in range(len(self._list)):
+            for index in range(i+1, len(self._list)):
+                if self._list[i] > self._list[index]:
+                    self._list[index], self._list[i] = self._list[i], self._list[index]
+        return self._list
 
 
 if __name__ == "__main__":
@@ -108,5 +115,5 @@ if __name__ == "__main__":
 
     robot = SortingRobot(l)
 
-    robot.sort()
-    print(robot._list)
+    print(robot.sort())
+    #print(robot._list)
