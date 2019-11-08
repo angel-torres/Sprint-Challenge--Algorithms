@@ -8,7 +8,7 @@ a)	This snippet will run have an runtime of O(n). This is because the times the 
 b)	This snippen will run at O(n^2). This is because the for loop will increase as n increases consistantly. But because there is a nested while loop that also increases with the size of n, we multiply those values and end up with O(n*n). Which reduces to O(n^2)
 
 
-c) This snippet is O(n) because the larger the bunny ears then the more times the function will run recusively. 	
+c) This snippet is O(n) because the larger the number of bunnies then the more times the function will run recusively. 	
 
 ## Exercise II
 
